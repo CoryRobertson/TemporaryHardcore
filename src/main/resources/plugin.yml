@@ -1,0 +1,6 @@
+name: TemporaryHardcore
+version: '${version}'
+main: com.github.coryrobertson.temporaryhardcore.TemporaryHardcore
+api-version: 1.19
+prefix: Temporary hardcore
+description: A temporary hardcore gamemode modification

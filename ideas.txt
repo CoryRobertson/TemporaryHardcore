@@ -1,0 +1,1 @@
+this plugin should allow someone to die in a hardcore world, and be banned for a temporary amount of time specified in a config option or build option.

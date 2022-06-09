@@ -17,6 +17,8 @@ public final class TemporaryHardcore extends JavaPlugin {
 
     public static int BAN_LENGTH_MILIS = 15000;
 
+    public static int FUNNY_CHANCE = 5;
+
     public static FileConfiguration configuration;
 //    public static File configurationFile;
 
@@ -32,7 +34,9 @@ public final class TemporaryHardcore extends JavaPlugin {
         configuration.addDefault("change-death-message", false);
         configuration.addDefault("kick-message", "You died...");
         configuration.addDefault("death-message", " died.");
+        configuration.addDefault("funny-chance", 5);
         this.saveDefaultConfig();
+        FUNNY_CHANCE = configuration.getInt("funny-chance");
         KICK_MESSAGE = configuration.getString("kick-message");
         DEATH_MESSAGE = configuration.getString("death-message");
         BAN_LENGTH_MILIS = configuration.getInt("ban-duration");

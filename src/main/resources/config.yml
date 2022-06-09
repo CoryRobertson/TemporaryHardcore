@@ -5,3 +5,4 @@ spawn-enemy-on-death: false
 change-death-message: false
 death-message: " died, lmao"
 kick-message: "You died lmao..."
+funny-chance: 5

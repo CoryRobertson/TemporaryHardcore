@@ -60,11 +60,11 @@ public class DieEventListener implements Listener {
 
         // small chance to drop a non-pickup-able bread on death
         int rand = ThreadLocalRandom.current().nextInt(0,100 + 1);
-        if(rand < 5)
+        if(rand < TemporaryHardcore.FUNNY_CHANCE)
         {
             Item is = e.getEntity().getWorld().dropItemNaturally(location, new ItemStack(Material.BREAD));
             is.setPickupDelay(9999);
-            is.setTicksLived(5700); // this should make the item die in 15 secs
+            is.setTicksLived(4800); // this should make the item die in one minute
         }
 
         // add new player death state to arraylist

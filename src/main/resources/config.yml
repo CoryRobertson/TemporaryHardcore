@@ -1,0 +1,7 @@
+enable-lightning: false
+disable-for-ops: false
+ban-duration: 15000
+spawn-enemy-on-death: false
+change-death-message: false
+death-message: " died, lmao"
+kick-message: "You died lmao..."

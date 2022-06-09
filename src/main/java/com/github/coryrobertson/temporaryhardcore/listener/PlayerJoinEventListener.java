@@ -31,11 +31,11 @@ public class PlayerJoinEventListener implements Listener
                 long currentTimeMilis = currentTime.getTime();
                 if(Math.abs(currentTimeMilis - timeOfDeath) < TemporaryHardcore.BAN_LENGTH_MILIS)
                 {
-                    e.getPlayer().kickPlayer(TemporaryHardcore.DEATH_MESSAGE);
+                    e.getPlayer().kickPlayer(TemporaryHardcore.KICK_MESSAGE);
                     Bukkit.broadcastMessage(player.name() + " tried to connect, but was dead. " + player.timeOfDeath());
                 }
 
-                Bukkit.getLogger().info("==============player joined who was on the list!!!!");
+//                Bukkit.getLogger().info("==============player joined who was on the list!!!!");
                 Bukkit.getLogger().info(String.valueOf(player));
 
             }

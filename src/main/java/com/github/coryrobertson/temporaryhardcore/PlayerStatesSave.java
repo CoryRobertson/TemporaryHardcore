@@ -1,10 +1,6 @@
 package com.github.coryrobertson.temporaryhardcore;
 
-import com.github.coryrobertson.simplesaver.SerializableSave;
-import com.github.coryrobertson.simplesaver.Serializer;
 import org.bukkit.Bukkit;
-
-import java.io.File;
 import java.util.ArrayList;
 
 public class PlayerStatesSave

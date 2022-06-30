@@ -7,7 +7,7 @@ public class PlayerStatesSave
 {
     public ArrayList<PlayerRecord> playerRecords;
 
-    public static final String SAVE_NAME = "./playerRecords.sav";
+    public static final String SAVE_NAME = "./playerRecords.sav"; // maybe we save a file full of all the dead players so if the server stops we still remember who died?
 
     public PlayerStatesSave()
     {
@@ -18,12 +18,14 @@ public class PlayerStatesSave
 
     public void addPlayerDeath(PlayerRecord playerRecord)
     {
+        // print all dead people
         Bukkit.getLogger().info("All player deaths: =========================");
 
         for (var player: playerRecords)
         {
             Bukkit.getLogger().info(String.valueOf(player));
         }
+
         Bukkit.getLogger().info("=========================");
 
         for (int i = 0; i < playerRecords.size(); i++) {

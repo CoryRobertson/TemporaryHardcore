@@ -23,7 +23,8 @@ public final class TemporaryHardcore extends JavaPlugin {
 //    public static File configurationFile;
 
     @Override
-    public void onEnable() {
+    public void onEnable()
+    {
 
         //config stuff
         configuration = this.getConfig();
@@ -42,7 +43,6 @@ public final class TemporaryHardcore extends JavaPlugin {
         BAN_LENGTH_MILIS = configuration.getInt("ban-duration");
 
 
-//        Bukkit.getLogger().info(ChatColor.GREEN + "------------------ Enabled " + this.getName());
         log("ban-duration: " + BAN_LENGTH_MILIS);
         playerStatesSave = new PlayerStatesSave();
         getServer().getPluginManager().registerEvents(new DieEventListener(), this);
